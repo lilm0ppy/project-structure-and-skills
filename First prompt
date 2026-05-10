@@ -1,0 +1,23 @@
+Use this repo’s project-organization system and add my selected skills into the active structure.
+
+Requirements:
+1. Do not modify the original source skill folders.
+2. Only work inside:
+   - .claude/skills/
+   - codex-friendly-skills/
+   - SKILLS_INDEX.md
+   - AGENTS.md
+   - PROJECT_STATE.md
+   - TASK_LOG.md
+   - PROMPT_LOG.md
+3. Take the following selected skills and make them the curated active set for this project:
+   - [PASTE YOUR SELECTED SKILLS HERE]
+4. For each selected skill:
+   - verify whether it already exists in .claude/skills/ and/or codex-friendly-skills/
+   - if missing, copy it from the preserved source folders if available
+   - do not rewrite skill content unless I explicitly ask
+5. Update SKILLS_INDEX.md so the selected skills are clearly marked as the active baseline.
+6. Update AGENTS.md so agents know to prefer the selected baseline before optional skills.
+7. Update PROJECT_STATE.md with the current curated skill baseline.
+8. Add compressed entries to TASK_LOG.md and PROMPT_LOG.md describing what changed.
+9. Print the final curated skill list and the files changed.
