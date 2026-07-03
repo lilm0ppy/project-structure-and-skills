@@ -62,3 +62,30 @@ Use compressed execution entries. Skip trivial no-op activity.
 - Follow-up tasks:
   - Curate a default baseline skill set
   - Add project-specific meta-skills for compression and handoff maintenance
+
+### 2026-06-24
+- Agent used: Codex
+- Task: Deeply analyze `OTAInspectionApp/` and create clean project-structure docs mapping app context, architecture, data flow, current state, and open decisions without changing app code.
+- Skills used:
+  - `architecture-designer`
+  - `code-reviewer`
+  - `code-documenter`
+- Files changed:
+  - `CONTEXT_INDEX.md`
+  - `PROJECT_STATE.md`
+  - `TASK_LOG.md`
+  - `PROMPT_LOG.md`
+  - `OTAInspectionApp-Map/README.md`
+  - `OTAInspectionApp-Map/APP_CONTEXT.md`
+  - `OTAInspectionApp-Map/ARCHITECTURE_AND_DATA_FLOW.md`
+  - `OTAInspectionApp-Map/PROJECT_STATE.md`
+  - `OTAInspectionApp-Map/DECISIONS_AND_OPEN_QUESTIONS.md`
+- Tests/checks run:
+  - `npm test -- --runInBand` (`23/23` suites, `74/74` tests passed)
+  - `npx tsc --noEmit`
+  - `npx expo-doctor` (`18/18` checks passed)
+  - Manual code audit of `app/`, `components/`, `constants/`, `data/`, `hooks/`, `services/`, `types/`, `utils/`, `docs/`, and `__tests__/`
+- Outcome: Added a source-of-truth map pack for the current OTA app workspace and explicitly documented important code-vs-doc drift such as live DB encryption behavior, Android backup policy, and retention wording mismatch.
+- Follow-up tasks:
+  - Answer the owner-facing questions in `OTAInspectionApp-Map/DECISIONS_AND_OPEN_QUESTIONS.md`
+  - Optionally reconcile stale docs inside `OTAInspectionApp/docs/` after those decisions are made

@@ -33,6 +33,7 @@ Build and maintain a universal AI project-organization system that can be import
 - AGENT guidance now points agents toward selective skill loading and compressed state management.
 - Preserved source skill folders are separated from the active project-facing skill folders.
 - A curated preferred skill baseline is now defined for planning, coding, data/modelling, web/API work, safety/reliability, and memory/handoff maintenance.
+- App-specific codebase mapping can now live inside this structure; the OTA Inspection app map is documented under `OTAInspectionApp-Map/`.
 
 ## Broken or Incomplete Features
 

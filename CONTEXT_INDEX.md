@@ -26,6 +26,15 @@ This is the first file agents should use to decide what context matters.
 - relevant skill files
 - relevant source files
 
+## For OTAInspectionApp mapping
+
+- `OTAInspectionApp-Map/README.md`
+- `OTAInspectionApp-Map/APP_CONTEXT.md`
+- `OTAInspectionApp-Map/ARCHITECTURE_AND_DATA_FLOW.md`
+- `OTAInspectionApp-Map/PROJECT_STATE.md`
+- `OTAInspectionApp-Map/DECISIONS_AND_OPEN_QUESTIONS.md`
+- Read this map pack before making deep app changes so you do not rely on stale app-local handoff docs alone.
+
 Default skill path selection:
 - Codex: `codex-friendly-skills/`
 - Claude Code: `.claude/skills/`
